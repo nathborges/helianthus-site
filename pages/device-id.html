@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/principal.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/device-id.css" />
+    <title>Helianthus</title>
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <img id="logo-helianthus" src="../assets/img/logo.png" />
+        </div>
+        <div id="main-container-c">
+            <div id="center-container-c">
+                <img src="../assets/img/locate-helianthus-id.png" />
+                <h2>Para continuar, digite o identificador único do dispositivo.</h2>
+                <form id="device-id-form">
+                    <div class="flex justify-center" id="OTPInput"></div>
+                    <input inputmode="numeric" hidden id="otp" name="otp" value="" />
+                </form>
+                <div id="device-not-found">
+                    <p>O dispositivo com esse ID não foi encontrado.<br> Confira o ID do dispositivo e tente novamente.</p>
+                </div>
+                <div id="text-descriptive-container-center">
+                    <p>
+                        O identificador é composto por 5 dígitos, e pode ser encontrado na etiqueta do produto. Alternativamente, você pode utilizar o app e escanear o QR Code.
+                    </p>
+                </div>
+            </div>
+            <div id="container-continue-button-c">
+                <a id="continue-button-c" href="./load.html">
+                    <div id="continue-button-text-c">
+                        <span>Continuar</span>
+                    </div>
+                    <img id="continue-button-arrow" src="../assets/img/arrow.svg" width="11" height="11" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/form.js"></script>
+    <script type="text/javascript" src="../js/helpers/showError.js"></script>
+</body>
+
+</html>

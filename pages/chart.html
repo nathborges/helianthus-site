@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/principal.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/chart.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.0.2/chartjs-plugin-annotation.min.js"></script>
+    <title>Helianthus</title>
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <img id="logo-helianthus" src="../assets/img/logo.png">
+        </div>
+
+        <div id="main-container">
+            <div id="center-container">
+                <div id="info-container">
+                    <div id="info-container-device">
+                        <h3>Dispositivo <span id="device-id"></span></h3>
+                        <p>Ativado em <span id="device-data"></span></p>
+                    </div>
+                    <div id="info-container-price">
+                        <h3>Preço base</h3>
+                        <span>R$<span id="base-price"></span></span>
+                        <p>/kWh</p>
+                    </div>
+                </div>
+                <div id="all-charts-container">
+                    <div id="all-charts-container-nav">
+                        <ul>
+                            <li id="diary-button">Diário</li>
+                            <li id="weekly-button">Semanal</li>
+                            <li id="monthly-button">Mensal</li>
+                        </ul>
+                    </div>
+                    <div id="selected-chart-container">
+                        <canvas id="diary-chart" width="758" height="350"></canvas>
+                        <canvas id="weekly-chart" width="758" height="350"></canvas>
+                        <canvas id="monthly-chart" width="758" height="350"></canvas>
+                    </div>
+
+                </div>
+                <div id="estimate-chart-container">
+                    <h3>Estimativa de gasto</h3>
+                    <span id="estimate-value"></span>
+                    <p id="estimate-power"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/charts/helpers/buttons.js"></script>
+    <script type="text/javascript" src="../js/charts/helpers/fillchart.js"></script>
+    <script type="text/javascript" src="../js/charts/helpers/tooltip.js"></script>
+    <script type="text/javascript" src="../js/helpers/generateUrlAndLoadData.js"></script>
+    <script type="text/javascript" src="../js/charts/diary.js"></script>
+    <script type="text/javascript" src="../js/charts/weekly.js"></script>
+    <script type="text/javascript" src="../js/charts/monthly.js"></script>
+    <script type="text/javascript" src="../js/charts/data/showData.js"></script>
+</body>
+
+</html>

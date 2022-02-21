@@ -1,0 +1,231 @@
+#main-container {
+  margin-top: 60px;
+  height: 628px;
+  width: 822px;
+  background-color: #fcfcfc;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #979797;
+  border-radius: 3px;
+  overflow: hidden;
+  background-image: url(../img/grey-logo.svg);
+  background-repeat: no-repeat;
+  background-position: -27px 418px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  min-height: 280vh;
+}
+
+#center-container {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+}
+
+#all-charts-container {
+  background-color: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  height: 400px;
+  width: 758px;
+}
+
+#info-container {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 27px;
+}
+
+#info-container-device {
+  justify-self: right;
+  margin-right: auto;
+  flex: 1;
+}
+
+#info-container-device > h3 {
+  font-size: 16px;
+  color: black;
+  font-family: "Inter Medium";
+  margin-bottom: 3px;
+}
+
+#info-container-device > p {
+  font-size: 12px;
+  color: #747474;
+  font-family: "Inter Regular";
+}
+
+#info-container-price {
+  margin-left: auto;
+  text-align: right;
+  width: fit-content;
+  flex: 1;
+}
+
+#info-container-price > h3 {
+  font-size: 16px;
+  color: black;
+  font-family: "Inter Medium";
+  margin-bottom: 3px;
+}
+
+#info-container-price > span {
+  font-size: 24px;
+  color: #747474;
+  font-family: "Inter Light";
+  display: inline-block;
+}
+
+#info-container-price > p {
+  font-size: 12px;
+  color: #747474;
+  font-family: "Inter Light";
+  display: inline-block;
+}
+
+#all-charts-container-nav {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #c4c4c4;
+  height: 32.34px;
+  align-items: center;
+  align-content: center;
+}
+
+#all-charts-container-nav > ul {
+  display: flex;
+  font-family: "Inter Extra Bold";
+  font-size: 11.5px;
+  color: #727272;
+  text-transform: uppercase;
+  align-items: center;
+  height: 19.54px;
+  letter-spacing: 2px;
+}
+
+#all-charts-container-nav > ul > li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#estimate-chart-container {
+  margin-top: 19px;
+  text-align: right;
+  width: fit-content;
+  margin-left: auto;
+}
+
+#estimate-chart-container > h3 {
+  font-size: 16px;
+  color: black;
+  font-family: "Inter Medium";
+  margin-bottom: 4px;
+}
+
+#estimate-chart-container > span {
+  font-size: 24px;
+  color: #747474;
+  font-family: "Inter Light";
+}
+
+#estimate-chart-container > p {
+  font-size: 12px;
+  color: #747474;
+  font-family: "Inter Regular";
+  margin-top: 3px;
+}
+
+.tooltipDesign {
+  background: #ffffff;
+  height: fit-content;
+  width: 260px;
+  border-radius: 8px;
+  opacity: 1;
+  border: #c4c4c4 solid 1px;
+  position: absolute;
+}
+
+.tooltipath {
+  fill: rgba(255, 0, 0, 1);
+}
+
+.tooltipul {
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.tooltipul li {
+  display: grid;
+  grid-template-areas: "hora tensao corrente" "potencia potencia potencia";
+  flex-direction: column;
+}
+
+.spanHour {
+  grid-area: "hora";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  border-right: #c4c4c4 solid 1px;
+}
+
+.spanHour > span {
+  font-family: "Inter Extra Bold";
+  font-size: 11px;
+  color: #727272;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+}
+
+.spanHour > p {
+  margin-top: 5px;
+  font-family: "Inter Light";
+  font-size: 15px;
+  color: black;
+}
+
+.spanValues {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  align-content: center;
+}
+
+.spanValues > span {
+  font-family: "Inter Extra Bold";
+  font-size: 11px;
+  color: #727272;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.spanValues > p {
+  margin-top: 5px;
+  font-family: "Inter Light";
+  font-size: 15px;
+  color: black;
+}
+
+#weekly-chart {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 1000px;
+    height: 150vh;
+    align-items: center;
+  }
+}

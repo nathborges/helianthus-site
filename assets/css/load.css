@@ -1,0 +1,100 @@
+.loader {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-self: center;
+}
+
+.loader img {
+  height: 35px;
+  width: 35px;
+}
+
+#main-container-w {
+  margin-top: 60px;
+  height: 628px;
+  width: 822px;
+  background-color: #fcfcfc;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #979797;
+  border-radius: 3px;
+  overflow: hidden;
+  background-image: url(../img/grey-logo.svg);
+  background-repeat: no-repeat;
+  background-position: -27px 418px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+#center-container-w {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  margin-top: 244px;
+  align-items: center;
+}
+
+#center-container-w h2 {
+  margin-top: 8px;
+  font-family: "Inter Semibold";
+  font-size: 16px;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+}
+
+#center-container-w p {
+  font-family: "Inter Regular";
+  font-size: 13px;
+  text-align: center;
+  color: #606060;
+  margin-top: 8px;
+  text-align: center;
+  width: fit-content;
+  line-height: 17px;
+  padding-right: 220px;
+  padding-left: 220px;
+}
+
+@media (max-width: 600px) {
+  #header {
+    padding-top: 26px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+  }
+
+  #logo-helianthus {
+    width: 200px;
+    height: 45px;
+    margin-right: 0px;
+  }
+
+  .loader img {
+    height: 50px;
+    width: 50px;
+  }
+
+  #main-container-w {
+    height: 487px;
+    width: 95%;
+    background-position: -50px 390px;
+    align-items: center;
+    display: flex;
+  }
+
+  #center-container-w {
+    padding-top: 0px;
+    margin-top: 10px;
+    flex: 1;
+  }
+
+  #center-container-w p {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

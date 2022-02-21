@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Inter Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Regular"),
+    url(../fonts/Inter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Semibold"),
+    url(../fonts/Inter-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Light"), url(../fonts/Inter-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Medium"), url(../fonts/Inter-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Medium"), url(../fonts/Inter-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Medium"),
+    url(../fonts/Inter-ExtraBold.ttf) format("truetype");
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../img/blur-background.png);
+  background-size: cover;
+  background-position: center center;
+  height: 1300px;
+  background-color: aliceblue;
+  background-repeat: no-repeat;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+#header {
+  margin-top: 26px;
+  display: flex;
+  justify-content: right;
+  flex: 1;
+  width: 100%;
+}
+
+#logo-helianthus {
+  height: 31px;
+  margin-right: 30px;
+}

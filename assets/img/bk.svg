@@ -1,0 +1,10 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#CC5200" fill="none">
+
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_3">
+   <line stroke="null" id="svg_1" y2="12.125" x2="18.125" y1="12.125" x1="5.625"/>
+   <polyline id="svg_2" points="12.375,6 18.375,12 12.375,18 "/>
+  </g>
+ </g>
+</svg>
